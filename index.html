@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty schnitzel menu</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body, html {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f8f8f8;
-        }
-        img {
-            height: 100vh;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-    </style>
+    <title>Tasty Schnitzel Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <img src="menu.jpg" alt="Restaurant Menu">
+<body class="bg-amber-50 text-amber-900 font-sans">
+    <header class="bg-amber-800 text-amber-50 py-4 shadow-md">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center">Tasty Schnitzel Menu</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8" dir="rtl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="1.jpg" alt="Restaurant Menu" class="w-full h-full">
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="2.jpg" alt="Restaurant Menu" class="w-full h-full">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-amber-800 text-amber-50 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Tasty Schnitzel. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
